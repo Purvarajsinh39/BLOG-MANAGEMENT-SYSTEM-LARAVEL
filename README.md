@@ -26,18 +26,30 @@ The Blog Management System is a web application built using **Laravel 11** and *
 The following screenshots showcase the application's key interfaces (all in PNG format):
 1. **Home**: Homepage of the application.
 ![Home](screenshots/Home.png) 
-3. **AboutUs1**: First section of the About Us page.
-4. **AboutUs2**: Second section of the About Us page.
-5. **Register**: User registration page.
-6. **UserLogin**: User login page.
-7. **UserDashboard**: Dashboard for regular users to manage their posts.
-8. **CreatePost**: Form for creating a new blog post.
-9. **EditPost**: Form for editing an existing blog post.
-10. **ReviewerDashboard**: Dashboard for reviewers to manage post approvals.
-11. **ReviewerRequest**: Interface for reviewers to request post reviews.
-12. **AdminDashboard**: Admin dashboard for managing users and posts.
-13. **AdminRequest**: Interface for admins to handle reviewer requests.
-14. **PostPDF**: PDF view/export of a blog post.
+2. **AboutUs1**: First section of the About Us page.
+![AboutUs1](screenshots/AboutUs1.png)
+3. **AboutUs2**: Second section of the About Us page.
+![AboutUs2](screenshots/AboutUs2.png)
+4. **Register**: User registration page.
+![Register](screenshots/Register.png) 
+5. **UserLogin**: User login page.
+![UserLogin](screenshots/UserLogin.png) 
+6. **UserDashboard**: Dashboard for regular users to manage their posts.
+![UserDashboard](screenshots/UserDashboard.png) 
+7. **CreatePost**: Form for creating a new blog post.
+![CreatePost](screenshots/CreatePost.png) 
+8. **EditPost**: Form for editing an existing blog post.
+![EditPost](screenshots/EditPost.png)
+9. **ReviewerDashboard**: Dashboard for reviewers to manage post approvals.
+![ReviewerDashboard](screenshots/ReviewerDashboard.png)
+10. **ReviewerRequest**: Interface for reviewers to request post reviews.
+![ReviewerRequest](screenshots/ReviewerRequest.png)
+11. **AdminDashboard**: Admin dashboard for managing users and posts.
+![AdminDashboard](screenshots/AdminDashboard.png)
+12. **AdminRequest**: Interface for admins to handle reviewer requests.
+![AdminRequest](screenshots/AdminRequest.png)
+13. **PostPDF**: PDF view/export of a blog post.
+![EditPost](screenshots/EditPost.png)
 
 
 

@@ -49,7 +49,7 @@ The following screenshots showcase the application's key interfaces (all in PNG 
 12. **AdminRequest**: Interface for admins to handle reviewer requests.
 ![AdminRequest](screenshots/AdminRequest.png)
 13. **PostPDF**: PDF view/export of a blog post.
-![EditPost](screenshots/EditPost.png)
+![EditPost](screenshots/PostPDF.png)
 
 
 

@@ -24,19 +24,23 @@ The Blog Management System is a web application built using **Laravel 11** and *
 
 ## Screenshots
 The following screenshots showcase the application's key interfaces (all in PNG format):
-1. **AboutUs1**: First section of the About Us page.
-2. **AboutUs2**: Second section of the About Us page.
-3. **AdminDashboard**: Admin dashboard for managing users and posts.
-4. **AdminRequest**: Interface for admins to handle reviewer requests.
-5. **CreatePost**: Form for creating a new blog post.
-6. **EditPost**: Form for editing an existing blog post.
-7. **Home**: Homepage of the application.
-8. **PostPDF**: PDF view/export of a blog post.
-9. **Register**: User registration page.
-10. **ReviewerDashboard**: Dashboard for reviewers to manage post approvals.
-11. **ReviewerRequest**: Interface for reviewers to request post reviews.
-12. **UserDashboard**: Dashboard for regular users to manage their posts.
-13. **UserLogin**: User login page.
+1. **Home**: Homepage of the application.
+2. **AboutUs1**: First section of the About Us page.
+3. **AboutUs2**: Second section of the About Us page.
+4. **Register**: User registration page.
+5. **UserLogin**: User login page.
+6. **UserDashboard**: Dashboard for regular users to manage their posts.
+7. **CreatePost**: Form for creating a new blog post.
+8. **EditPost**: Form for editing an existing blog post.
+9. **ReviewerDashboard**: Dashboard for reviewers to manage post approvals.
+10. **ReviewerRequest**: Interface for reviewers to request post reviews.
+11. **AdminDashboard**: Admin dashboard for managing users and posts.
+12. **AdminRequest**: Interface for admins to handle reviewer requests.
+13. **PostPDF**: PDF view/export of a blog post.
+
+
+
+
 
 *Note*: Screenshots are stored in the `screenshots/` directory in the project root.
 

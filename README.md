@@ -54,123 +54,74 @@ Before setting up the project, ensure you have the following installed:
 Follow these steps to set up and run the project locally:
 
 ### 1. Clone the Repository
-bash
+```bash
 git clone <repository-url>
 cd blog-management
+```
 
-2. Install Dependencies
+### 2. Install Dependencies
 Install PHP dependencies using Composer:
+```bash
 composer install
+```
 
 Install Node.js dependencies for frontend assets:
+```bash
 npm install
+```
 
-3. Configure Environment
-Copy the .env.example file to create a .env file:
+### 3. Configure Environment
+Copy the `.env.example` file to create a `.env` file:
+```bash
 cp .env.example .env
+```
 
-Update the .env file with your database credentials:
+Update the `.env` file with your database credentials:
+```dotenv
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=blog-management
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
+```
 
 Generate an application key:
+```bash
 php artisan key:generate
+```
 
-4. Import the SQL Database
+### 4. Import the SQL Database
 To set up the database, import the provided SQL dump file into phpMyAdmin:
 
-Open phpMyAdmin in your browser (e.g., http://localhost/phpmyadmin).
-Create a new database named blog-management.
-Select the blog-management database.
-Click on the Import tab.
-Choose the SQL dump file (e.g., blog-management.sql) from your project directory.
-Click Go to import the database schema and data.
+1. Open phpMyAdmin in your browser (e.g., http://localhost/phpmyadmin).
+2. Create a new database named `blog-management`.
+3. Select the `blog-management` database.
+4. Click on the **Import** tab.
+5. Choose the SQL dump file (e.g., `blog-management.sql`) from your project directory.
+6. Click **Go** to import the database schema and data.
 
-The SQL dump includes the following tables:
-
-users: Stores user information (id, name, email, password, is_admin, is_reviewer).
-posts: Stores blog posts (id, title, content, user_id, img, status, suggestion).
-cache, cache_locks: For caching data.
-jobs, job_batches, failed_jobs: For queue and job management.
-sessions: For session management.
-password_reset_tokens: For password reset functionality.
-migrations: Tracks database migrations.
-
-5. Run Migrations (Optional)
+### 5. Run Migrations (Optional)
 If you prefer to set up the database using Laravel migrations instead of the SQL dump:
+```bash
 php artisan migrate
-
+```
 Note: If you use the SQL dump, migrations are already applied as per the migrations table.
-6. Compile Assets
+
+### 6. Compile Assets
 Compile frontend assets using Vite:
+```bash
 npm run dev
+```
 
 For production, use:
+```bash
 npm run build
+```
 
-7. Run the Application
+### 7. Run the Application
 Start the Laravel development server:
+```bash
 php artisan serve
-
-The application will be available at http://localhost:8000.
-Running the Project
-
-Ensure the database is imported and the .env file is configured.
-Start the development server:php artisan serve
-
-
-Access the application in your browser at http://localhost:8000.
-Log in using the following credentials (from the SQL dump):
-Admin: admin@gmail.com / password (hashed in DB)
-Reviewer: reviewer@gmail.com / password (hashed in DB)
-Users: Example user purvarajsinh@gmail.com / password (hashed in DB)
-
-
-
-Note: Passwords are hashed in the database. Use the password reset feature or update the users table manually to set new passwords if needed.
-Example route for user dashboard (from routes/web.php):
-Route::get('/user/dashboard', [UserController::class, 'dashboard'])->middleware('auth');
-
-Directory Structure
-Key directories in the project:
-
-app/: Contains Laravel application logic (models, controllers, etc.).
-database/: Contains migrations and the SQL dump file.
-public/: Stores compiled assets and uploaded images (e.g., uploads/ for post images).
-resources/: Contains Blade templates and frontend assets.
-screenshots/: Stores the 13 PNG screenshots listed above.
-routes/: Defines application routes (e.g., web.php).
-
-Troubleshooting
-
-Database Connection Error: Ensure MariaDB is running and the .env file has correct credentials.php artisan config:clear
-
-
-Missing Dependencies: Run composer install and npm install to ensure all dependencies are installed.
-Asset Compilation Issues: Verify Node.js and npm are installed, and run npm run dev or npm run build.
-Permission Issues: Ensure the storage/ and public/uploads/ directories have write permissions:chmod -R 775 storage
-chmod -R 775 public/uploads
-
-
-
-Contributing
-To contribute to the project:
-
-Fork the repository.
-Create a new branch:git checkout -b feature/your-feature
-
-
-Make your changes and commit:git commit -m "Add your feature"
-
-
-Push to the branch:git push origin feature/your-feature
-
-
-Create a pull request.
-
-License
-This project is licensed under the MIT License.```
+```
+The application will be available at [http://localhost:8000](http://localhost:8000).

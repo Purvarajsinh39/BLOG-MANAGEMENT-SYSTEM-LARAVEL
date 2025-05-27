@@ -1,7 +1,7 @@
 # Blog Management System
 
 ## Project Overview
-The Blog Management System is a web application built using **Laravel 11** and **PHP 8.2**. It enables users to create, edit, and manage blog posts with an admin and reviewer system for post approval and publishing. The application supports user authentication, role-based access (admin, reviewer, user), and post status management (`pending`, `reviewer_approved`, `published`, `rejected`). It uses **MariaDB** for data storage and **Vite** for asset management.
+The Blog Management System is a web application built using **Laravel 11** and **PHP 8.2**. It enables users to create, edit, and manage blog posts with an admin and reviewer system for post approval and publishing. The application supports user authentication, role-based access (admin, reviewer, user), and post status management (`pending`, `reviewer_approved`, `published`, `rejected`). It uses **phpMyAdmin** for data storage.
 
 ### Features
 - **User Management**: Register, login, and manage user profiles.
@@ -17,7 +17,7 @@ The Blog Management System is a web application built using **Laravel 11** and *
 
 ### Tech Stack
 - **Backend**: Laravel 11, PHP 8.2
-- **Database**: MariaDB 10.4.32
+- **Database**: phpMyAdmin
 - **Frontend**: Blade templates, Vite for asset bundling
 - **Testing**: Supports Pest PHP for testing
 - **Others**: Laravel's built-in support for caching, job queues, and migrations
@@ -61,7 +61,6 @@ The following screenshots showcase the application's key interfaces (all in PNG 
 Before setting up the project, ensure you have the following installed:
 - **PHP** 8.2 or higher
 - **Composer** (for dependency management)
-- **MariaDB** 10.4.32 or compatible MySQL version
 - **Node.js** and **npm** (for Vite asset compilation)
 - **Git** (for cloning the repository)
 - **phpMyAdmin** (for database management)
